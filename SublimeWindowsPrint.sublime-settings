@@ -1,4 +1,4 @@
 {
     // The full path to the command to be used for printing.
-    "print_command_path": "C:/Windows/System32/print"
+    "print_command_path": "C:\Windows\System32\notepad.exe /p"
 }

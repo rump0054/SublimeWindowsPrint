@@ -47,7 +47,7 @@ class SublimeWindowsPrint(sublime_plugin.WindowCommand):
         return print_cmd
 
     def send_file_to_printer(self, cmd, file_path):
-        cmd.append(file_path)
+        cmd + " " + file_path
         p = open_pipe(cmd)
         ret = p.wait()
 
