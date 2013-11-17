@@ -1,0 +1,4 @@
+[
+	{ "caption": "-" },
+    { "caption": "Print", "command": "print_file" }
+]
