@@ -55,7 +55,7 @@ class SublimeWindowsPrint(sublime_plugin.WindowCommand):
             raise EnvironmentError((cmd, ret, p.stdout.read()))
 
 
-class PrintFileCommand(SublimePrint):
+class PrintFileCommand(SublimeWindowsPrint):
     '''
     Print the current file.
     '''
