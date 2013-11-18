@@ -1,4 +1,8 @@
 {
     // The full path to the command to be used for printing.
-    "print_command_path": "C:\\Windows\\System32\\notepad.exe /p"
+    "print_command_path": "C:\\Windows\\System32\\notepad.exe",
+    
+    // String of options and switches to pass to command
+    // Will be appended to the print_command_path as a string
+    "print_command_options" : "/p"
 }

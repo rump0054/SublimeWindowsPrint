@@ -38,11 +38,15 @@ class SublimeWindowsPrint(sublime_plugin.WindowCommand):
 
     def printer_command(self):
         '''
-        Return the array of command line options to pass to the subprocess.
+        Return the complete command including options to pass to the subprocess.
         '''
         settings = load_settings()
         print_cmd = self.find_command(settings.get("print_command_path"))
         if print_cmd is None: return None
+        
+        print_options = settings.get("print_command_options")
+        if print_options is not None:
+        	print_cmd = print_cmd + " " + print_options
 
         return print_cmd
 
